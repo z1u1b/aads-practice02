@@ -10,9 +10,10 @@
 */
 
 #include <iostream>
-template <class T>
-T *merge(const T *const *a, size_t sa, const size_t *sai, T *c) {
-  size_t *new_sai = nullptr;
+template < class T >
+T* merge(const T* const* a, size_t sa, const size_t* sai, T* c)
+{
+  size_t* new_sai = nullptr;
   try {
     new_sai = new size_t[sa];
   } catch (...) {
@@ -67,13 +68,14 @@ T *merge(const T *const *a, size_t sa, const size_t *sai, T *c) {
 
 #include <iostream>
 
-int main() {
+int main()
+{
   int arr1[] = {1, 5, 9, 13, 17, 21, 25};
   int arr2[] = {2, 6, 10, 14, 18, 22};
   int arr3[] = {3, 7, 11, 15, 19, 23, 27, 30};
   int arr4[] = {4, 8, 12, 16, 20, 24, 28, 32, 36};
 
-  const int *a[] = {arr1, arr2, arr3, arr4};
+  const int* a[] = {arr1, arr2, arr3, arr4};
   const size_t sai[] = {7, 6, 8, 9};
   size_t sa = 4;
 
